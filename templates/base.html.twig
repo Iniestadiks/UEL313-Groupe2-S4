@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome to WatsonSF!{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        {% block stylesheets %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </head>
+    <body>
+        <div class="header">
+            <h1>Bienvenue sur WatsonSF</h1>
+        </div>
+
+        <div class="main-content">
+            {% block body %}{% endblock %}
+        </div>
+
+        <div class="footer">
+            <p>WatsonSF - Réalisé avec ❤️ par l'équipe</p>
+        </div>
+    </body>
+</html>
